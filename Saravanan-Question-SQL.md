@@ -32,6 +32,7 @@
 |----|------|----------|---------|----------------|-----------------|--------|
 | 001 | 2025-10-12 | *Awaiting first question* | 🔴 Pending | - | - | - |
 
+
 ---
 
 ## 🔍 Investigation Template
@@ -40,9 +41,27 @@ When you provide a question, I will follow this template:
 
 ### Agent Consultation:
 ```
-Question: [Your question]
-Agent Response: [AI agent answer]
-References Provided: [List of sources cited by agent]
+Question: [Why should StudentID be a Primary Key?]
+Agent Response: [Uniqueness:
+
+Each student has a unique StudentID.
+
+This prevents confusion if two students have the same name.
+
+Example: Two students may both be named “Arjun,” but their StudentID could be 101 and 102, making them distinct.
+
+Identification of Data:
+
+The Primary Key allows the database to uniquely identify each row.
+
+This is essential for data integrity in relational databases.
+
+Creating Relationships:
+
+StudentID can be used as a foreign key in other tables.
+
+Example: In a MarksTable, StudentID can link a student to their marks correctly.]
+References Provided: [https://assets.website-files.com/6724e886e39d150f85bc5c10/67bf8016fa04881949919055_xiviletuxulojogezobin.pdf?utm_source=chatgpt.com]
 Confidence Level: [Agent's stated confidence]
 ```
 
