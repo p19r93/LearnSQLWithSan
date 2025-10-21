@@ -31,6 +31,7 @@
 | Q# | Date | Question | Status | Agent Response | Verified Answer | Match? |
 |----|------|----------|---------|----------------|-----------------|--------|
 | 001 | 2025-10-12 | *Awaiting first question* | 🔴 Pending | - | - | - |
+001,2025-10-21,Relational Databases vs NoSQL Databases,🟡 In Progress,Complete below,-,-
 
 
 ---
@@ -41,8 +42,14 @@ When you provide a question, I will follow this template:
 
 ### Agent Consultation:
 ```
-Question: [Why should StudentID be a Primary Key?]
+Question: [Feature,Relational Databases (SQL),NoSQL Databases (Non-Relational)
+Data Model / Structure,Table-based (Fixed Schema): Data is stored in fixed rows and columns. Relationships are established using Primary and Foreign Keys.,"Flexible/Dynamic Schema: Data is stored in various models (Document, Key-Value, Graph, Wide-Column). Structure can change easily without altering the entire database."
+Query Language,"SQL (Structured Query Language): A standardized, powerful language for defining and manipulating data.","Varies: Uses various query languages, APIs, or object-relational mapping (ORM) depending on the specific NoSQL type (e.g., MongoDB Query Language)."
+Scalability,"Vertical Scaling: Scaling is achieved by upgrading a single server (adding more CPU, RAM, or SSD). Can become expensive.",Horizontal Scaling: Scaling is achieved by distributing data across many servers (clustering/sharding). Highly cost-effective for large-scale data.
+Consistency Model,ACID Compliant (Strong Consistency): Prioritizes data integrity; all transactions must succeed or fail completely. Essential for financial and transactional systems.,"BASE Properties (Eventual Consistency): Prioritizes availability and partition tolerance; data consistency is achieved over time, not instantaneously."
+Use Cases,"Applications requiring complex queries, multi-row transactions, and high data integrity (e.g., Banking, ERP, Inventory Management).","Applications with high volume, rapid growth, and flexible/unstructured data (e.g., Social Media Feeds, Real-time Analytics, Content Management Systems)."]
 Agent Response: [Uniqueness:
+Since this is a widely discussed and well-documented topic in computer science, the Agent's Confidence Level is: 95% (High).
 
 Each student has a unique StudentID.
 
@@ -61,7 +68,11 @@ Creating Relationships:
 StudentID can be used as a foreign key in other tables.
 
 Example: In a MarksTable, StudentID can link a student to their marks correctly.]
-References Provided: [https://assets.website-files.com/6724e886e39d150f85bc5c10/67bf8016fa04881949919055_xiviletuxulojogezobin.pdf?utm_source=chatgpt.com]
+References Provided: Microsoft Learn: Relational vs. NoSQL data
+
+GeeksforGeeks: Difference between Relational database and NoSQL
+
+Coursera: SQL vs. NoSQL: The Differences Explained + When to Use Each
 Confidence Level: [Agent's stated confidence]
 ```
 
