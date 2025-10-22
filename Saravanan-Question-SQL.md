@@ -32,7 +32,8 @@
 |----|------|----------|---------|----------------|-----------------|--------|
 | 001 | 2025-10-12 | *Awaiting first question* | 🔴 Pending | - | - | - |
 001,2025-10-21,Relational Databases vs NoSQL Databases,🟡 In Progress,Complete below,-,-
-
+Q#,Date,Question,Status,Agent Response,Verified Answer,Match
+002,2025-10-22,Understand database vs file systems,🟢 Completed,Previously answered,Previously answered,Yes
 
 ---
 
@@ -146,3 +147,32 @@ Recommended Action: [Accept/Modify/Reject agent answer]
 *Ready to receive your first SQL question for investigation!*
 
 *Last Updated: October 12, 2025*
+The initial question regarding the difference between **Database Management Systems (DBMS)** and **File Systems** has already been addressed, and your current queue shows a follow-up question on **Relational Databases (SQL) vs. NoSQL Databases**.
+
+The data you provided in your investigation template contains the *complete comparison* for the follow-up question, including the features, models, scaling, and use cases for both Relational and NoSQL databases.
+
+Here is the direct answer, structured according to your documented comparison data, which can be placed into your `Verified-Answers-SQL.md` file.
+
+***
+
+## Verified Answer: Relational Databases (SQL) vs. NoSQL Databases
+
+The distinction between Relational Databases (often called SQL) and NoSQL Databases is centered on their approach to data structure, scalability, and consistency. The key differences are summarized below, based on the facts provided in your question file.
+
+| Feature | Relational Databases (SQL) | NoSQL Databases (Non-Relational) |
+| :--- | :--- | :--- |
+| **Data Model / Structure** | **Table-based (Fixed Schema):** Data is stored in fixed rows and columns. Relationships are established using Primary and Foreign Keys. | **Flexible/Dynamic Schema:** Data is stored in various models (Document, Key-Value, Graph, Wide-Column). Structure can change easily without altering the entire database. |
+| **Query Language** | **SQL (Structured Query Language):** A standardized, powerful language for defining and manipulating data. | **Varies:** Uses various query languages, APIs, or object-relational mapping (ORM) depending on the specific NoSQL type (e.g., MongoDB Query Language). |
+| **Scalability** | **Vertical Scaling:** Scaling is achieved by upgrading a single server (adding more CPU, RAM, or SSD). Can become expensive. | **Horizontal Scaling:** Scaling is achieved by distributing data across many servers (clustering/sharding). Highly cost-effective for large-scale data. |
+| **Consistency Model** | **ACID Compliant (Strong Consistency):** Prioritizes data integrity; all transactions must succeed or fail completely. Essential for financial and transactional systems. | **BASE Properties (Eventual Consistency):** Prioritizes availability and partition tolerance; data consistency is achieved over time, not instantaneously. |
+| **Use Cases** | Applications requiring **complex queries**, **multi-row transactions**, and **high data integrity** (e.g., Banking, ERP, Inventory Management). | Applications with **high volume**, **rapid growth**, and **flexible/unstructured data** (e.g., Social Media Feeds, Real-time Analytics, Content Management Systems). |
+
+***
+
+### ➡️ Investigation Conclusion (Q# 001)
+
+Based on the information provided in your **Agent Consultation** and the widespread consensus of the provided sources, the information is consistent and verifiable.
+
+* **Answer Accuracy:** ✅ Verified
+* **Confidence Level:** High
+* **Recommended Action:** Accept agent answer.
