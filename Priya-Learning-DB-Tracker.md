@@ -34,7 +34,7 @@
   - Uses tables with rows and columns
   - ACID properties
 - [ ] **NoSQL Databases**
-  - Document: MongoDB, CouchDB
+  - Document: MongoDB, CouchDBw
   - Key-Value: Redis, DynamoDB
   - Column-family: Cassandra, HBase
   - Graph: Neo4j, Amazon Neptune
